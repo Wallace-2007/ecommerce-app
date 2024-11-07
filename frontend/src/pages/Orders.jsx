@@ -44,7 +44,7 @@ const Orders = () => {
     <div className='border-t pt-16'>
       
       <div className='text-2xl'>
-        <Title text1={'MY'} text2={'ORDERS'} />
+        <Title text1={'MEUS'} text2={'PEDIDOS'} />
       </div>
 
       <div>
