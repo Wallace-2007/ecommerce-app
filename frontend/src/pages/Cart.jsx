@@ -29,7 +29,7 @@ const Cart = () => {
   return (
     <div className='border-t pt-14'>
       <div className='text-2xl mb-3'>
-        <Title text1={'YOUR'} text2={'CART'} />
+        <Title text1={'SEU'} text2={'CARRINHO'} />
       </div>
 
       <div>
@@ -64,11 +64,11 @@ const Cart = () => {
                 />
               </div>
             ) : (
-              <p key={index} className='text-red-500'>Product not found</p> // Mensagem de erro se o produto não for encontrado
+              <p key={index} className='text-red-500'>Produto não encontrado</p> // Mensagem de erro se o produto não for encontrado
             );
           })
         ) : (
-          <p>Your cart is empty.</p> // Mensagem se o carrinho estiver vazio
+          <p>Seu carrinho está vazio!</p> // Mensagem se o carrinho estiver vazio
         )}
       </div>
 
@@ -79,7 +79,7 @@ const Cart = () => {
             <button 
               onClick={() => navigate('/place-order')} 
               className='bg-black text-white text-sm my-8 px-8 py-3'>
-              PROCEED TO CHECKOUT
+              PROSSIGA O CHECKOUT
             </button>
           </div>
         </div>

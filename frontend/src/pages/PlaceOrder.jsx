@@ -137,7 +137,7 @@ const PlaceOrder = () => {
         </div>
 
         <div className='mt-12'>
-          <Title text1={'PAYMENT'} text2={'METHOD'} />
+          <Title text1={'MÉTODO DE'} text2={'PAGAMENTO'} />
           {/*----------Payment Method Selection------------- */}
           <div className='flex gap-3 flex-col lg:flex-row'>
             <div onClick={() => setMethod('stripe')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
@@ -155,7 +155,7 @@ const PlaceOrder = () => {
           </div>
 
           <div className='w-full text-end mt-8'>
-            <button type='submit' className='bg-black text-white px-16 py-3 text-sm'>PLACE ORDER</button>
+            <button type='submit' className='bg-black text-white px-16 py-3 text-sm'>Finalizar Pedido</button>
           </div>
         </div>
       </div>

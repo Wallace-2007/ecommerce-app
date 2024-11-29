@@ -9,25 +9,25 @@ const Footer = () => {
         <div>
           <img src={assets.logo} className='mb-5 w-32' alt="" />
           <p className='w-full md:w-2/3 tetx-gray-600'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo distinctio ab ipsum quis doloribus sequi aliquid dolore numquam qui recusandae accusantium unde, aliquam culpa praesentium sunt fuga porro eius facilis.
+          Comprometidos em oferecer moda de qualidade e um atendimento excepcional, a Joyce Galvão Modas é a escolha ideal para quem busca estilo e autenticidade. Descubra nossa coleção e sinta a diferença de se vestir bem.
           </p>
         </div>
 
         <div>
-          <p className='text-xl font-medium mb-5'>COMPANY</p>
+          <p className='text-xl font-medium mb-5'>COMPANHIA</p>
           <ul className='flex flex-col gap-1 text-gray-600'>
             <li>Home</li>
-            <li>About</li>
+            <li>Sobre</li>
             <li>Delivery</li>
-            <li>Privacy policy</li>
+            <li>Políticas de privacidade</li>
           </ul>
         </div>
 
         <div>
-          <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
+          <p className='text-xl font-medium mb-5'>ENTRE EM CONTATO</p>
           <ul className='flex flex-col gap-1 text-gray-600'>
             <li>+55-12-97812-4430</li>
-            <li>valasebd@gmail.com</li>
+            <li>joycegalvao@gmail.com</li>
           </ul>
         </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
 
       <div>
         <hr />
-        <p className='py-5 text-sm text-center'> Copyright 2024@ valasebd.com - Todos os Direitos Reservados
+        <p className='py-5 text-sm text-center'> Copyright 2024@ joycegalvao.com - Todos os Direitos Reservados
         </p>
       </div>
 

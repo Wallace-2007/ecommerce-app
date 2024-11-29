@@ -17,7 +17,7 @@ const LatestCollection = () => {
         <div className='text-center py-8 text-3xl'>
             <Title text1={'ÚLTIMAS'} text2={'COLEÇÕES'} />
             <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, quia. Minima quos consectetur doloribus doloremque eos, dolores pariatur architecto laudantium, assumenda asperiores porro facere, aperiam iure reprehenderit suscipit debitis autem.
+            Nossas últimas coleções trazem as tendências mais atuais e exclusivas, combinando estilo e inovação para atender aos gostos mais sofisticados. Cada peça é pensada para oferecer versatilidade e elegância, garantindo um visual moderno e confortável em todas as ocasiões. Descubra as novidades e adicione um toque de frescor ao seu guarda-roupa.
             </p>
         </div>
       

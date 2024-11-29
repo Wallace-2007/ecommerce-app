@@ -89,8 +89,8 @@ const Product = () => {
           <p className='border px-5 py-3 text-sm'>Análise (122)</p>
         </div>
         <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur totam tempore quas amet libero. Adipisci facilis perspiciatis officia dolorum delectus eius quod iure ipsam, fugiat aliquam! Nemo adipisci dolore nulla.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates asperiores magni explicabo fuga cum nihil aliquid nam illum, veniam sapiente ex fugiat id quod officia numquam culpa natus tempore ipsum</p>
+          <p>As roupas da Joyce Galvão Modas são pensadas para quem busca estilo e conforto em cada peça. Com uma seleção variada, a loja traz opções que vão do casual ao sofisticado, garantindo looks para diferentes ocasiões. Cada detalhe é cuidado para oferecer qualidade e um toque de exclusividade, sempre acompanhando as últimas tendências.</p>
+          <p>Além disso, a Joyce Galvão Modas preza pelo atendimento personalizado, ajudando cada cliente a encontrar o visual perfeito para expressar sua personalidade. Com peças que combinam elegância e praticidade, a loja se destaca por criar uma experiência de compra agradável e uma coleção que reflete as preferências e o estilo de vida de suas clientes.</p>
         </div>
       </div>
 

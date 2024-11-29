@@ -77,13 +77,13 @@ const Collection = () => {
           <p className='mb-3 text-sm font-medium'>CATEGORIES</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value='Men' onChange={toggleCategory} />Men
+              <input className='w-3' type="checkbox" value='Men' onChange={toggleCategory} />Homem
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value='Women' onChange={toggleCategory} />Women
+              <input className='w-3' type="checkbox" value='Women' onChange={toggleCategory} />Mulher
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value='Kids' onChange={toggleCategory} />Kids
+              <input className='w-3' type="checkbox" value='Kids' onChange={toggleCategory} />Infantil
             </p>
           </div>
         </div>
@@ -92,13 +92,13 @@ const Collection = () => {
           <p className='mb-3 text-sm font-medium'>TYPE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value='Topwear' onChange={toggleSubCategory} />Topwear
+              <input className='w-3' type="checkbox" value='Topwear' onChange={toggleSubCategory} />Roupas de cima
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value='Bottomwear' onChange={toggleSubCategory} />Bottomwear
+              <input className='w-3' type="checkbox" value='Bottomwear' onChange={toggleSubCategory} />Roupas de baixo
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value='Winterwear' onChange={toggleSubCategory} />Winterwear
+              <input className='w-3' type="checkbox" value='Winterwear' onChange={toggleSubCategory} />Roupas de inverno
             </p>
           </div>
         </div>
@@ -110,9 +110,9 @@ const Collection = () => {
           <Title text1='ALL' text2='COLLECTIONS' />
           {/* Ordenação */}
           <select onChange={(e) => setSortType(e.target.value)} className='border-2 border-gray-300 text-sm px-2'>
-            <option value='relevant'>Sort by: Relevant</option>
-            <option value='low-high'>Sort by: Low to High</option>
-            <option value='high-low'>Sort by: High to Low</option>
+            <option value='relevant'>Ordenar por: Relevância</option>
+            <option value='low-high'>Ordenar por: Do maior ao menor preço</option>
+            <option value='high-low'>Ordenar por: Do menor ao maior preço</option>
           </select>
         </div>
 
@@ -123,7 +123,7 @@ const Collection = () => {
               <ProductItem key={index} name={item.name} id={item._id} price={item.price} image={item.image} />
             ))
           ) : (
-            <p className='text-center'>No products found.</p> // Mensagem se não houver produtos
+            <p className='text-center'>Produtos não encontrados.</p> // Mensagem se não houver produtos
           )}
         </div>
       </div>

@@ -18,7 +18,7 @@ const BestSeller = () => {
       <div className='text-center text-3xl py-8'>
         <Title text1={'BEST'} text2={'SELLERS'}/>
         <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, perspiciatis earum! Voluptatem exercitationem accusantium magnam esse maiores cupiditate ducimus, voluptates veniam at iste distinctio labore facere harum et numquam quaerat.
+        Nossos best sellers são selecionados com cuidado para garantir que você encontre as peças mais desejadas e populares da temporada. São produtos que combinam qualidade, estilo e versatilidade, conquistando o gosto das nossas clientes e se tornando indispensáveis no guarda-roupa. Cada item é uma aposta certeira para quem busca sofisticação e conforto em qualquer ocasião.
         </p>
       </div>
 
