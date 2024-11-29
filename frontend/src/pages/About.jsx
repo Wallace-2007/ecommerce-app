@@ -22,7 +22,7 @@ const About = () => {
       </div>
       
       <div className='text-xl py-4'>
-        <Title text1={'WHY'} text2={'CHOOSE US'}/>
+        <Title text1={'POR QUE NOS'} text2={'ESCOLHER?'}/>
       </div>
 
       <div className='flex flex-col md:flex-row text-sm mb-20'>
@@ -32,7 +32,7 @@ const About = () => {
         </div>
         <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
            <b>Conveniência:</b>
-           <p className='text-gray-600'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, exercitationem facilis? Veritatis mollitia et soluta recusandae fuga, sunt iste ab fugit dolores harum obcaecati sed blanditiis inventore eos quidem vitae?</p>
+           <p className='text-gray-600'>Oferecemos soluções práticas e acessíveis para facilitar o dia a dia de nossos clientes. Desde compras online intuitivas até entregas rápidas, tudo é pensado para o seu conforto e comodidade.</p>
         </div>
         <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
            <b>Atendimento ao Cliente Excepcional:</b>

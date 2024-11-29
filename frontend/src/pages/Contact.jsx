@@ -14,7 +14,7 @@ const Contact = () => {
       <div className='my-10 flex flex-col justify-center md:flex-row gap-10 mb-28'>
         <img className='w-full md:max-w-[480px]' src={assets.contact_img} alt="" />
         <div className='flex flex-col justify-center items-start gap-6'>
-          <p className='font-semibold text-xl text-gray-600'>nossa loja</p>
+          <p className='font-semibold text-xl text-gray-600'>Nossa loja</p>
           <p className='text-gray-500'>Av. Monumental Papa João Paulo II <br/> Aparecida 174, São Paulo, BRA</p>
           <p className='text-gray-500'>Tel: (12) 3125-4622 <br/> Email: joycegalvao@gmail.com</p>
           <p className='font-semibold text-xl text-gray-600'>Tem alguma sugestão?</p>
