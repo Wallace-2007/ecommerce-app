@@ -94,7 +94,7 @@ const Add = ({token}) => {
         <input onChange={(e)=>setName(e.target.value)} value={name} className='w-full max-w-[500px] px-3 py-2' type="text" placeholder='Type here' required/>
       </div>
       <div className='w-full'>
-        <p className='mb-2'>Product description</p>
+        <p className='mb-2'>Descrição do produto</p>
         <textarea onChange={(e)=>setDescription(e.target.value)} value={description} className='w-full max-w-[500px] px-3 py-2' type="text" placeholder='Write content here' required/>
       </div>
 
