@@ -67,7 +67,7 @@ const Add = ({token}) => {
   return (
     <form onSubmit={onSubmitHandler} className='flex flex-col w-full items-start gap-3'>
       <div>
-        <p className='mb-2'>Upload Imagem</p>
+        <p className='mb-2'>Upload de Imagem</p>
 
         <div className='flex gap-2'>
           <label htmlFor="image1">
