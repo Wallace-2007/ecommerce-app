@@ -111,8 +111,8 @@ const Collection = () => {
           {/* Ordenação */}
           <select onChange={(e) => setSortType(e.target.value)} className='border-2 border-gray-300 text-sm px-2'>
             <option value='relevant'>Ordenar por: Relevância</option>
-            <option value='low-high'>Ordenar por: Do maior ao menor preço</option>
-            <option value='high-low'>Ordenar por: Do menor ao maior preço</option>
+            <option value='low-high'>Ordenar por: Do menor ao maior preço</option>
+            <option value='high-low'>Ordenar por: Do maior ao menor preço</option>
           </select>
         </div>
 
