@@ -4,7 +4,6 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const Login = () => {
-
   const [currentState, setCurrentState] = useState('Login');
   const { token, setToken, navigate, backendUrl } = useContext(ShopContext);
   const [name, setName] = useState('');
@@ -14,7 +13,7 @@ const Login = () => {
   const onSubmitHandler = async (event) => {
     event.preventDefault();
     try {
-      if (currentState === 'Sign Upp') {
+      if (currentState === 'Sign Up') {
         const response = await axios.post(`${backendUrl}/api/user/register`, { name, email, password });
 
         if (response.data && response.data.success) {
@@ -22,7 +21,16 @@ const Login = () => {
           localStorage.setItem('token', response.data.token);
           toast.success('Cadastro realizado com sucesso!');
         } else {
-          toast.error(response.data.message || 'Erro ao cadastrar usuário.');
+          // Tratamento para mensagens de erro específicas
+          if (response.data && response.data.message) {
+            if (response.data.message.includes('already exists')) {
+              toast.error('Este email já está cadastrado. Por favor, faça login.');
+            } else {
+              toast.error(response.data.message || 'Erro ao cadastrar usuário.');
+            }
+          } else {
+            toast.error('Erro desconhecido ao cadastrar usuário.');
+          }
         }
       } else {
         const response = await axios.post(`${backendUrl}/api/user/login`, { email, password });
