@@ -33,7 +33,7 @@ const Footer = () => {
           </ul>
           <div className='mt-3'>
             <a 
-              href="https://instagram.com/seu_perfil_loja" 
+              href="https://www.instagram.com/joyceg.galvoo/" 
               target="_blank" 
               rel="noopener noreferrer"
               className='flex items-center gap-2 text-gray-600 hover:text-black'
