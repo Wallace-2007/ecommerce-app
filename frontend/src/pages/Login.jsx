@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'; 
 import { ShopContext } from '../context/ShopContext';
-import axios from 'axios'
+import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const Login = () => {
@@ -14,43 +14,47 @@ const Login = () => {
   const onSubmitHandler = async (event) => {
     event.preventDefault();
     try {
-
       if (currentState === 'Sign Up') {
+        const response = await axios.post(`${backendUrl}/api/user/register`, { name, email, password });
 
-
-        const response = await axios.post(backendUrl + "/api/user/register", { name, email, password })
-        if (response.data.success) {
-          setToken(response.data.token)
-          localStorage.setItem('token', response.data.token)
+        if (response.data && response.data.success) {
+          setToken(response.data.token);
+          localStorage.setItem('token', response.data.token);
+          toast.success('Cadastro realizado com sucesso!');
         } else {
-          toast.error(response.data.message)
+          toast.error(response.data.message || 'Erro ao cadastrar usuário.');
         }
-
-
-
       } else {
-        const response = await axios.post(backendUrl + '/api/user/login', {email,password})
-        if (response.data.success) {
-          setToken(response.data.token)
-          localStorage.setItem('token', response.data.token)
+        const response = await axios.post(`${backendUrl}/api/user/login`, { email, password });
+
+        if (response.data && response.data.success) {
+          setToken(response.data.token);
+          localStorage.setItem('token', response.data.token);
+          toast.success('Login realizado com sucesso!');
         } else {
-          toast.error(response.data.message)
+          toast.error(response.data.message || 'Credenciais inválidas.');
         }
-        
       }
-
     } catch (error) {
-      console.log(error);
-      toast.error(error.message);
-    }
-  }
+      console.error('Erro no processamento:', error);
+      const backendErrorMessage = error.response?.data?.message;
+      const statusCode = error.response?.status;
 
-  useEffect(()=>{
-    if(token){
-      navigate('/')
+      if (backendErrorMessage) {
+        toast.error(`Erro: ${backendErrorMessage}`);
+      } else if (statusCode) {
+        toast.error(`Erro no servidor: Código ${statusCode}`);
+      } else {
+        toast.error('Erro ao processar a solicitação. Verifique sua conexão.');
+      }
     }
-  },[token])
+  };
 
+  useEffect(() => {
+    if (token) {
+      navigate('/');
+    }
+  }, [token, navigate]);
 
   return (
     <form onSubmit={onSubmitHandler} className='flex flex-col items-center w-[90%] sm:max-w-96 m-auto mt-14 gap-4 text-gray-800'>
@@ -65,13 +69,13 @@ const Login = () => {
         <p className='cursor-pointer'>Esqueceu sua senha?</p>
         {
           currentState === 'Login'
-            ? <p onClick={() => setCurrentState('Cadastre-se')} className='cursor-pointer'>Criar conta</p>
+            ? <p onClick={() => setCurrentState('Sign Up')} className='cursor-pointer'>Criar conta</p>
             : <p onClick={() => setCurrentState('Login')} className='cursor-pointer'>Faça login</p>
         }
       </div>
       <button className='bg-black text-white font-light px-8 py-2 mt-4'>{currentState === 'Login' ? 'Faça seu login' : 'Cadastre-se'}</button>
     </form>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
