@@ -76,12 +76,7 @@ const List = ({ token }) => {
             <p>{item.category}</p>
             <p>{currency}{item.price}</p>
             <div className="text-right md:text-center">
-              <button
-                onClick={() => handleEdit(item._id)} // Editar produto
-                className="mr-2 text-blue-500"
-              >
-                Editar
-              </button>
+              
               <button
                 onClick={() => removeProduct(item._id)} // Remover produto
                 className="text-red-500"

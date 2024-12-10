@@ -86,7 +86,7 @@ const Add = ({ token }) => {
           value={name}
           className='w-full max-w-[500px] px-3 py-2'
           type="text"
-          placeholder='Type here'
+          placeholder='Nome do Produto'
           required
         />
       </div>
@@ -97,7 +97,7 @@ const Add = ({ token }) => {
           onChange={(e) => setDescription(e.target.value)}
           value={description}
           className='w-full max-w-[500px] px-3 py-2'
-          placeholder='Write content here'
+          placeholder='Descrição do produto'
           required
         />
       </div>
