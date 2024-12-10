@@ -1,5 +1,5 @@
-import React from 'react'
-import { assets } from '../assets/assets'
+import React from 'react';
+import { FaInstagram } from 'react-icons/fa'; // Importa o ícone do Instagram
 
 const Footer = () => {
   return (
@@ -7,9 +7,9 @@ const Footer = () => {
       <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm'>
 
         <div>
-          <img src={assets.logo} className='mb-5 w-32' alt="" />
-          <p className='w-full md:w-2/3 tetx-gray-600'>
-          Comprometidos em oferecer moda de qualidade e um atendimento excepcional, a Joyce Galvão Modas é a escolha ideal para quem busca estilo e autenticidade. Descubra nossa coleção e sinta a diferença de se vestir bem.
+          <img src="path/to/your/logo.png" className='mb-5 w-32' alt="Logo da Joyce Galvão Modas" />
+          <p className='w-full md:w-2/3 text-gray-600'>
+            Comprometidos em oferecer moda de qualidade e um atendimento excepcional, a Joyce Galvão Modas é a escolha ideal para quem busca estilo e autenticidade. Descubra nossa coleção e sinta a diferença de se vestir bem.
           </p>
         </div>
 
@@ -28,7 +28,19 @@ const Footer = () => {
           <ul className='flex flex-col gap-1 text-gray-600'>
             <li>+55-12-97812-4430</li>
             <li>joycegalvao@gmail.com</li>
+            
           </ul>
+          <div className='mt-3'>
+            <a 
+              href="https://instagram.com/seu_perfil_loja" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className='flex items-center gap-2 text-gray-600 hover:text-black'
+            >
+              <FaInstagram className='w-5 h-5' /> {/* Ícone do Instagram */}
+              Siga-nos no Instagram
+            </a>
+          </div>
         </div>
 
       </div>
@@ -40,7 +52,7 @@ const Footer = () => {
       </div>
 
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
