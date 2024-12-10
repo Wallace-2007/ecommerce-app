@@ -14,7 +14,7 @@ const Login = () => {
   const onSubmitHandler = async (event) => {
     event.preventDefault();
     try {
-      if (currentState === 'Sign Up') {
+      if (currentState === 'Sign Upp') {
         const response = await axios.post(`${backendUrl}/api/user/register`, { name, email, password });
 
         if (response.data && response.data.success) {
